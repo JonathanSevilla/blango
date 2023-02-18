@@ -30,5 +30,9 @@ class Comment(models.Model):
     content = models.TextField()
     content_type = models.ForeignKey(ContentType, on_delete=models.CASCADE)
     object_id = models.PositiveIntegerField()
+<<<<<<< HEAD
     content_object = GenericForeignKey("content_type", "object_id")
     
+=======
+    content_object = GenericForeignKey("content_type", "object_id")
+>>>>>>> 4d305826d10860dd6295c2cd9f769f385c9df198
