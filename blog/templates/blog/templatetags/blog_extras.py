@@ -3,7 +3,7 @@ from django import template
 user_model = get_user_model()
 register = template.Library()
 
-register.filter
+@register.filter
 def author_details(author):
     if not isinstance(author, user_model):
         # return empty string as safe default
